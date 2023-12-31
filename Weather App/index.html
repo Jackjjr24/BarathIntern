@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Video background -->
+    <video id="background-video" autoplay muted loop>
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+        <br><br>
+        <div id="weatherInfo"></div>
+        <br>
+        <button onclick="showSavedLocations()">Show Saved Locations</button>
+        <div id="savedLocations" style="display: none;">
+            <h2>Saved Locations</h2>
+            <ul id="locationsList"></ul>
+            <br>
+            <button onclick="hideSavedLocations()">Hide Saved Locations</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function showSavedLocations() {
+            document.getElementById('savedLocations').style.display = 'block';
+        }
+
+        function hideSavedLocations() {
+            document.getElementById('savedLocations').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

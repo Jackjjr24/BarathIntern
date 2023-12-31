@@ -1,0 +1,66 @@
+/* Video Background */
+body, html {
+    height: 100%; /* Full height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Horizontally aligns content to center */
+    align-items: center;     /* Vertically aligns content to center */
+    color: white; /* Change text color to white */
+}
+
+#background-video {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1; /* Place it behind all other elements */
+    background-repeat: no-repeat;
+    background-size: cover; /* This ensures the video covers the entire background */
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of the video */
+    padding: 40px; /* Increased padding for a bigger box */
+    border-radius: 12px; /* Rounded corners for a more appealing look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background for better transparency effect */
+}
+
+h1 {
+    /* Styles for the "Weather App" title */
+    font-family: 'Times New Roman', Times, serif; /* Change the font for the h1 element */
+    text-align: center; /* Align the text in the center */
+    margin-bottom: 30px; 
+}
+
+button {
+    /* Style for buttons */
+    padding: 12px 24px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 6px; /* Rounded corners for buttons */
+    background-color: #87CEEB; /* Light blue color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #79a8d8; /* Slightly darker shade of light blue on hover */
+}
+
+ul {
+    /* Style for list */
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    /* Style for list items */
+    margin-bottom: 10px;
+}
