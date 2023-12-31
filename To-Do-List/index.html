@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+    <header>
+        <h1>To-Do List App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#todoPage" onclick="showPage('todoPage')">To-Do List</a></li>
+            <li><a href="#completedPage" onclick="showPage('completedPage')">Completed Tasks</a></li>
+            <li><a href="#dailyRecordsPage" onclick="showPage('dailyRecordsPage')">Daily Records</a></li>
+            <li><a href="#incompleteTasksPage" onclick="showPage('incompleteTasksPage')">Incomplete Tasks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="todoPage">
+            <ul id="todoList"></ul>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <input type="time" id="timeInput" placeholder="Set deadline time">
+            <button onclick="addTask()">Add Task</button>
+        </section>
+        <section id="completedPage">
+            <h2>Completed Tasks</h2>
+            <ul id="completedList"></ul>
+        </section>
+        <section id="dailyRecordsPage">
+            <h2>Daily Records</h2>
+            <ul id="dailyRecordsList"></ul>
+        </section>
+        <section id="incompleteTasksPage">
+            <h2>Incomplete Tasks</h2>
+            <ul id="incompleteTasksList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
